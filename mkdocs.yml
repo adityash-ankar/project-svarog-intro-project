@@ -1,0 +1,36 @@
+site_name: project-svarog-intro-project
+repo_url: https://github.com/adityash-ankar/project-svarog-intro-project
+site_url: https://adityash-ankar.github.io/project-svarog-intro-project
+site_description: Centralised github repository containing codebase and templates for the introductory project two axis flywheel control system.
+site_author: Aditya Shankar
+repo_name: adityash-ankar/project-svarog-intro-project
+edit_uri: edit/main/docs/
+copyright: Maintained by <a href="https://github.com/adityash-ankar">Aditya Shankar</a>.
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - License: license.md
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: deep purple
+    accent: purple
+  icon:
+    repo: fontawesome/brands/github
+plugins:
+  - search
+  - gh-admonitions
+  - minify:
+      minify_html: true
+      htmlmin_opts:
+        remove_comments: true
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      use_pygments: true
+      pygments_style: material
+      noclasses: true
+  - pymdownx.inlinehilite
+  - pymdownx.emoji
+  - admonition
